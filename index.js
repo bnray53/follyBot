@@ -30,9 +30,4 @@ comments.on('comment', (comment) => {
         comment.reply(':)');
         console.log("Successful Reply");
     }
-    //console.log(comment);
 });
-
-//r.getSubmission('8x1c8y').expandReplies({limit: Infinity, depth: Infinity}).then(console.log);
-
-//console.log("Hello World");
