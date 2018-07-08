@@ -6,7 +6,7 @@ const snoostorm = require('snoostorm');
 console.log("Bot has started");
 
 const r = new snoowrap({
-    userAgent: 'folly-bot',
+    userAgent: 'desktop:folly_bot:v1.0.0 (by /u/follyBot)',
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
