@@ -15,19 +15,18 @@ const r = new snoowrap({
 
 const client= new snoostorm(r);
 
-// Configure options for stream: subreddit & results per query
+// Selecting subreddit, set to all before deployment
 const streamOpts = {
     subreddit: 'testingground4bots',
-    results: 25
 };
 
-// Create a Snoostorm CommentStream with the specified options
+// Creating comment stream
 const comments = client.CommentStream(streamOpts);
 
-// On comment, perform whatever logic you want to do
+// Program logic
 comments.on('comment', (comment) => {
-    if (comment.body === ':(') {
-        comment.reply(':)');
+    if (comment.body.includes('where ignorance is bliss')) {
+        comment.reply('Did you know the phrase \'Where Ignorance is Bliss\' is actually part of a much larger poem entitled Ode on a Distant Prospect of Eton College http://www.thomasgray.org/cgi-bin/display.cgi?text=odec ');
         console.log("Successful Reply");
     }
 });
