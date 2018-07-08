@@ -6,4 +6,5 @@
 
 ### Demo
 - Here's an example of the follyBot in action.
+
 ![picture of subbreddit demonstration](https://github.com/bnray53/follyBot/blob/master/2018-07-08.png)
